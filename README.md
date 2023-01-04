@@ -1,4 +1,2 @@
-# Projects Origamid
-Projetos do meu curso da Origamid.
-
-Aqui tem projetos de HTML e CSS, Javascript/Frameworks e mais.
+# BikCraft Grid
+Projeto com o intuito de testar minhas capacidades com o Grid Layout no CSS.
