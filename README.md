@@ -1,2 +1,4 @@
-# BikCraft Grid
-Projeto com o intuito de testar minhas capacidades com o Grid Layout no CSS.
+# Bikcraft (Grid e Flexbox)
+
+- Projeto com a ideia de treinar o conhecimento com Grid e Flexbox.
+- Imagens disponibilizadas por Origamid.
