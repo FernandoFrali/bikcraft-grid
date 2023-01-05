@@ -49,6 +49,11 @@ body {
 
 .menu:hover {
   background-color: rgb(220, 220, 220);
+  transition: 0.2s;
+}
+
+.menu:active {
+  background-color: rgb(215, 0, 0);
 }
 
 .mainContent {
@@ -68,7 +73,8 @@ body {
   position: relative;
 }
 
-.detalhe {
+h1::before {
+  content: '';
   background-color: red;
   padding: 2px 30px;
   border-radius: 4px;
@@ -103,7 +109,15 @@ body {
   background-color: white;
 }
 
-.vantOne {
+.vant:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.vant:hover {
+  border-left: 0.3125rem solid red;
+}
+
+.vant {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
@@ -111,29 +125,7 @@ body {
   padding: 20px;
 }
 
-.vantOne p {
-  grid-column: 2;
-}
-
-.vantTwo {
-  padding: 20px;
-  grid-column: 2;
-  display: grid;
-  gap: 10px 20px;
-}
-
-.vantTwo p {
-  grid-column: 2;
-}
-
-.vantThree {
-  padding: 20px;
-  grid-column: 2;
-  display: grid;
-  gap: 10px 20px;
-}
-
-.vantThree p {
+.vant p {
   grid-column: 2;
 }
 
@@ -143,7 +135,8 @@ body {
   font-size: 65px;
   text-transform: uppercase;
   color: #c6c6c6;
-  padding: 30px
+  padding: 30px;
+  background-image: url('./img/onda.svg');
 }
 
 footer {
