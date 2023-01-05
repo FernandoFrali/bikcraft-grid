@@ -73,6 +73,10 @@ body {
   position: relative;
 }
 
+#first-text {
+  font-size: 2rem;
+}
+
 h1::before {
   content: '';
   background-color: red;
