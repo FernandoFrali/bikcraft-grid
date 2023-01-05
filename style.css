@@ -11,7 +11,7 @@ img {
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 a {
@@ -77,7 +77,7 @@ body {
   font-size: 2rem;
 }
 
-h1::before {
+#first-text::before {
   content: '';
   background-color: red;
   padding: 2px 30px;
@@ -126,7 +126,7 @@ h1::before {
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   grid-column: 2;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .vant p {
@@ -136,10 +136,10 @@ h1::before {
 #text {
   align-self: center;
   text-align: right;
-  font-size: 65px;
+  font-size: 4.0625rem;
   text-transform: uppercase;
   color: #c6c6c6;
-  padding: 30px;
+  padding: 1.875rem;
   background-image: url('./img/onda.svg');
 }
 
