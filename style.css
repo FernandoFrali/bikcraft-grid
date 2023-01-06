@@ -102,6 +102,10 @@
   footer {
     margin-top: 50px;
   }
+  .gridOne {
+    justify-items: start !important;
+    text-align: start !important;
+  }
 }
 
 * {
