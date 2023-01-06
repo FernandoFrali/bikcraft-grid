@@ -1,3 +1,76 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d70000;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+:target {
+  scroll-margin-top: 0.8em;
+}
+
+@media screen and (max-width: 600px) {
+  .mainContent {
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) !important;
+    max-width: 1000px;
+  }
+  #text {
+    align-self: center !important;
+    text-align: center !important;
+    font-size: 2rem !important;
+    text-transform: uppercase;
+    color: #c6c6c6 !important;
+    padding: 5.5rem 0 !important;
+    background-image: url('./img/onda.svg');
+  }
+  #first-text::before {
+    content: '';
+    background-color: red;
+    padding: 0.125rem 0.6rem !important;
+    border-radius: 4px;
+    position: absolute;
+    right: 0 !important;
+  }
+  body {
+    grid-template-columns: 1fr;
+    background-image: url('./img/onda.svg') !important;
+  }
+  nav {
+    grid-area: 2;
+  }
+
+  .menuContainer {
+    margin-top: 170px !important;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap !important;
+    text-align: center !important;
+  }
+  header {
+    height: 87vh !important;
+  }
+  footer {
+    margin-top: 50px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +90,10 @@ p {
 a {
   text-decoration: none;
   color: black;
+}
+
+nav {
+  margin-top: 130px;
 }
 
 body {
@@ -58,7 +135,7 @@ body {
 
 .mainContent {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(500px, 1fr));
   max-width: 1000px;
 }
 
